@@ -1,0 +1,26 @@
+[2024-04-02T03:46:45.247+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_dag_pythonop.details manual__2024-04-02T03:46:44.129770+00:00 [queued]>
+[2024-04-02T03:46:45.266+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_dag_pythonop.details manual__2024-04-02T03:46:44.129770+00:00 [queued]>
+[2024-04-02T03:46:45.267+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-02T03:46:45.303+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): details> on 2024-04-02 03:46:44.129770+00:00
+[2024-04-02T03:46:45.313+0000] {standard_task_runner.py:60} INFO - Started process 1599 to run task
+[2024-04-02T03:46:45.317+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'first_dag_pythonop', 'details', 'manual__2024-04-02T03:46:44.129770+00:00', '--job-id', '99', '--raw', '--subdir', 'DAGS_FOLDER/first_day_pythonop.py', '--cfg-path', '/tmp/tmp33i0wbp0']
+[2024-04-02T03:46:45.319+0000] {standard_task_runner.py:88} INFO - Job 99: Subtask details
+[2024-04-02T03:46:45.413+0000] {task_command.py:423} INFO - Running <TaskInstance: first_dag_pythonop.details manual__2024-04-02T03:46:44.129770+00:00 [running]> on host 5c9eefa8eb82
+[2024-04-02T03:46:45.576+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_dag_pythonop' AIRFLOW_CTX_TASK_ID='details' AIRFLOW_CTX_EXECUTION_DATE='2024-04-02T03:46:44.129770+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-02T03:46:44.129770+00:00'
+[2024-04-02T03:46:45.581+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first_day_pythonop.py", line 29, in details
+    name=ti.xcom.pull(task_ids="name")
+AttributeError: 'TaskInstance' object has no attribute 'xcom'
+[2024-04-02T03:46:45.610+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=first_dag_pythonop, task_id=details, execution_date=20240402T034644, start_date=20240402T034645, end_date=20240402T034645
+[2024-04-02T03:46:45.640+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 99 for task details ('TaskInstance' object has no attribute 'xcom'; 1599)
+[2024-04-02T03:46:45.694+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-02T03:46:45.741+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

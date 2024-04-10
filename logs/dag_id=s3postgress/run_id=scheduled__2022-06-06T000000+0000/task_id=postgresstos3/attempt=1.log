@@ -1,0 +1,18 @@
+[2024-04-03T07:02:49.370+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3postgress.postgresstos3 scheduled__2022-06-06T00:00:00+00:00 [queued]>
+[2024-04-03T07:02:49.393+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3postgress.postgresstos3 scheduled__2022-06-06T00:00:00+00:00 [queued]>
+[2024-04-03T07:02:49.394+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-03T07:02:49.426+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): postgresstos3> on 2022-06-06 00:00:00+00:00
+[2024-04-03T07:02:49.437+0000] {standard_task_runner.py:60} INFO - Started process 2076 to run task
+[2024-04-03T07:02:49.443+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3postgress', 'postgresstos3', 'scheduled__2022-06-06T00:00:00+00:00', '--job-id', '349', '--raw', '--subdir', 'DAGS_FOLDER/s3postgress.py', '--cfg-path', '/tmp/tmp0vwf8zs4']
+[2024-04-03T07:02:49.445+0000] {standard_task_runner.py:88} INFO - Job 349: Subtask postgresstos3
+[2024-04-03T07:02:49.535+0000] {task_command.py:423} INFO - Running <TaskInstance: s3postgress.postgresstos3 scheduled__2022-06-06T00:00:00+00:00 [running]> on host 41da1b14e620
+[2024-04-03T07:02:49.736+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3postgress' AIRFLOW_CTX_TASK_ID='postgresstos3' AIRFLOW_CTX_EXECUTION_DATE='2022-06-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-06-06T00:00:00+00:00'
+[2024-04-03T07:02:49.739+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/context.py:207: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2024-04-03T07:02:49.757+0000] {base.py:83} INFO - Using connection ID 'postgress_localhost' for task execution.
+[2024-04-03T07:02:49.920+0000] {s3postgress.py:40} INFO - Data has been written to the file: dags/get_orders20220606.txt
+[2024-04-03T07:02:49.922+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-03T07:02:49.940+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=s3postgress, task_id=postgresstos3, execution_date=20220606T000000, start_date=20240403T070249, end_date=20240403T070249
+[2024-04-03T07:02:49.978+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-03T07:02:50.011+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

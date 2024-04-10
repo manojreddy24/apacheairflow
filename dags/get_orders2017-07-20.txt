@@ -1,0 +1,31 @@
+r,e,g,i,o,n
+c,o,u,n,t,r,y
+i,t,e,m,_,t,y,p,e
+s,a,l,e,s,_,c,h,a,n,n,e,l
+o,r,d,e,r,_,p,r,i,o,r,i,t,y
+o,r,d,e,r,_,d,a,t,e
+o,r,d,e,r,_,i,d
+s,h,i,p,_,d,a,t,e
+u,n,i,t,s,_,s,o,l,d
+u,n,i,t,_,p,r,i,c,e
+u,n,i,t,_,c,o,s,t
+t,o,t,a,l,_,r,e,v,e,n,u,e
+t,o,t,a,l,_,c,o,s,t
+t,o,t,a,l,_,p,r,o,f,i,t
+Australia and Oceania,Vanuatu,Fruits,Online,M,2017-07-13,135336816,2017-08-17,8026,9,6,74882,55539,19342
+Europe,Switzerland,Cosmetics,Online,C,2017-07-20,233811223,2017-07-20,8792,437,263,3843862,2315197,1528665
+Europe,Albania,Household,Online,C,2017-07-14,380379998,2017-07-16,1749,668,502,1168804,878942,289861
+Europe,Macedonia,Office Supplies,Offline,C,2017-07-17,747826755,2017-07-22,7410,651,524,4825466,3889953,935512
+Central America and the Caribbean,Nicaragua,Clothes,Online,L,2017-07-12,407930362,2017-07-31,4514,109,35,493289,161781,331508
+Sub-Saharan Africa,Rwanda,Beverages,Online,M,2017-07-13,318390929,2017-08-31,7806,47,31,370394,248152,122241
+Europe,Kosovo,Cereal,Offline,H,2017-07-18,483655774,2017-08-05,3346,205,117,688272,391850,296422
+Australia and Oceania,Federated States of Micronesia,Clothes,Online,M,2017-07-17,641678225,2017-08-27,5701,109,35,623005,204323,418681
+Europe,Macedonia,Beverages,Offline,M,2017-07-17,704139363,2017-08-31,9340,47,31,443183,296918,146264
+Sub-Saharan Africa,Cote d'Ivoire,Cereal,Offline,C,2017-07-20,603776681,2017-08-17,9792,205,117,2014214,1146741,867473
+Central America and the Caribbean,Trinidad and Tobago,Household,Online,H,2017-07-14,172530257,2017-08-31,4392,668,502,2935041,2207155,727886
+Sub-Saharan Africa,Togo,Vegetables,Online,H,2017-07-13,565598762,2017-07-29,2097,154,90,323063,190680,132383
+Sub-Saharan Africa,Senegal,Household,Online,M,2017-07-20,506050717,2017-07-30,508,668,502,339481,255290,84190
+Asia,Laos,Cosmetics,Offline,C,2017-07-20,744954001,2017-07-25,7298,437,263,3190685,1921782,1268903
+Middle East and North Africa,Bahrain,Snacks,Online,H,2017-07-16,330080640,2017-08-04,7051,152,97,1075841,687049,388792
+Asia,Kazakhstan,Vegetables,Online,L,2017-07-20,302412259,2017-08-17,9363,154,90,1442463,851377,591086
+Sub-Saharan Africa,Niger,Personal Care,Online,M,2017-07-15,694142234,2017-08-07,967,81,56,79032,54799,24233

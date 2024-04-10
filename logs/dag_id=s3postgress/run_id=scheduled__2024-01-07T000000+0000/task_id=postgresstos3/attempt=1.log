@@ -1,0 +1,15 @@
+[2024-04-03T07:24:40.882+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3postgress.postgresstos3 scheduled__2024-01-07T00:00:00+00:00 [queued]>
+[2024-04-03T07:24:40.906+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3postgress.postgresstos3 scheduled__2024-01-07T00:00:00+00:00 [queued]>
+[2024-04-03T07:24:40.907+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-03T07:24:40.944+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): postgresstos3> on 2024-01-07 00:00:00+00:00
+[2024-04-03T07:24:40.956+0000] {standard_task_runner.py:60} INFO - Started process 3548 to run task
+[2024-04-03T07:24:40.960+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3postgress', 'postgresstos3', 'scheduled__2024-01-07T00:00:00+00:00', '--job-id', '932', '--raw', '--subdir', 'DAGS_FOLDER/s3postgress.py', '--cfg-path', '/tmp/tmp6ers9zln']
+[2024-04-03T07:24:40.963+0000] {standard_task_runner.py:88} INFO - Job 932: Subtask postgresstos3
+[2024-04-03T07:24:41.075+0000] {task_command.py:423} INFO - Running <TaskInstance: s3postgress.postgresstos3 scheduled__2024-01-07T00:00:00+00:00 [running]> on host 41da1b14e620
+[2024-04-03T07:24:41.308+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3postgress' AIRFLOW_CTX_TASK_ID='postgresstos3' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T00:00:00+00:00'
+[2024-04-03T07:24:41.331+0000] {base.py:83} INFO - Using connection ID 'postgress_localhost' for task execution.
+[2024-04-03T07:24:41.375+0000] {s3postgress.py:40} INFO - Data has been written to the file: dags/get_orders2017-07-12.txt
+[2024-04-03T07:24:41.377+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-03T07:24:41.398+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=s3postgress, task_id=postgresstos3, execution_date=20240107T000000, start_date=20240403T072440, end_date=20240403T072441
+[2024-04-03T07:24:41.457+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-03T07:24:41.495+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

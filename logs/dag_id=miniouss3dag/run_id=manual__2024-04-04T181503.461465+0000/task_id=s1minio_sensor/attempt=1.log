@@ -1,0 +1,35 @@
+[2024-04-04T18:15:04.760+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: miniouss3dag.s1minio_sensor manual__2024-04-04T18:15:03.461465+00:00 [queued]>
+[2024-04-04T18:15:04.768+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: miniouss3dag.s1minio_sensor manual__2024-04-04T18:15:03.461465+00:00 [queued]>
+[2024-04-04T18:15:04.769+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-04T18:15:04.781+0000] {taskinstance.py:2217} INFO - Executing <Task(S3KeySensor): s1minio_sensor> on 2024-04-04 18:15:03.461465+00:00
+[2024-04-04T18:15:04.787+0000] {standard_task_runner.py:60} INFO - Started process 248 to run task
+[2024-04-04T18:15:04.788+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'miniouss3dag', 's1minio_sensor', 'manual__2024-04-04T18:15:03.461465+00:00', '--job-id', '1089', '--raw', '--subdir', 'DAGS_FOLDER/minios3buc.py', '--cfg-path', '/tmp/tmpek4y6qb7']
+[2024-04-04T18:15:04.789+0000] {standard_task_runner.py:88} INFO - Job 1089: Subtask s1minio_sensor
+[2024-04-04T18:15:04.825+0000] {task_command.py:423} INFO - Running <TaskInstance: miniouss3dag.s1minio_sensor manual__2024-04-04T18:15:03.461465+00:00 [running]> on host 41da1b14e620
+[2024-04-04T18:15:04.888+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='miniouss3dag' AIRFLOW_CTX_TASK_ID='s1minio_sensor' AIRFLOW_CTX_EXECUTION_DATE='2024-04-04T18:15:03.461465+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-04T18:15:03.461465+00:00'
+[2024-04-04T18:15:04.889+0000] {s3.py:110} INFO - Poking for key : s3://***/data.csv
+[2024-04-04T18:15:04.896+0000] {base.py:83} INFO - Using connection ID 'minin_s3' for task execution.
+[2024-04-04T18:15:04.897+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minin_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-04-04T18:15:04.897+0000] {warnings.py:109} WARNING - <string>:9: AirflowProviderDeprecationWarning: extra['host'] is deprecated and will be removed in a future release. Please set extra['endpoint_url'] instead
+
+[2024-04-04T18:15:10.284+0000] {s3.py:110} INFO - Poking for key : s3://***/data.csv
+[2024-04-04T18:15:15.296+0000] {s3.py:110} INFO - Poking for key : s3://***/data.csv
+[2024-04-04T18:15:20.306+0000] {s3.py:110} INFO - Poking for key : s3://***/data.csv
+[2024-04-04T18:15:25.314+0000] {s3.py:110} INFO - Poking for key : s3://***/data.csv
+[2024-04-04T18:15:30.325+0000] {s3.py:110} INFO - Poking for key : s3://***/data.csv
+[2024-04-04T18:15:35.335+0000] {s3.py:110} INFO - Poking for key : s3://***/data.csv
+[2024-04-04T18:15:35.341+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 153, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 282, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 30.452052052 seconds exceeds the specified timeout of 30.0.
+[2024-04-04T18:15:35.348+0000] {taskinstance.py:1149} INFO - Immediate failure requested. Marking task as FAILED. dag_id=miniouss3dag, task_id=s1minio_sensor, execution_date=20240404T181503, start_date=20240404T181504, end_date=20240404T181535
+[2024-04-04T18:15:35.365+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1089 for task s1minio_sensor (Sensor has timed out; run duration of 30.452052052 seconds exceeds the specified timeout of 30.0.; 248)
+[2024-04-04T18:15:35.406+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-04T18:15:35.419+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

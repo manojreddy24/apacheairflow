@@ -1,0 +1,34 @@
+[2024-04-03T07:31:23.419+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: s3postgress.postgresstos3 manual__2024-04-03T07:21:07.655498+00:00 [queued]>
+[2024-04-03T07:31:23.435+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: s3postgress.postgresstos3 manual__2024-04-03T07:21:07.655498+00:00 [queued]>
+[2024-04-03T07:31:23.436+0000] {taskinstance.py:2193} INFO - Starting attempt 4 of 7
+[2024-04-03T07:31:23.468+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): postgresstos3> on 2024-04-03 07:21:07.655498+00:00
+[2024-04-03T07:31:23.477+0000] {standard_task_runner.py:60} INFO - Started process 3814 to run task
+[2024-04-03T07:31:23.481+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 's3postgress', 'postgresstos3', 'manual__2024-04-03T07:21:07.655498+00:00', '--job-id', '1021', '--raw', '--subdir', 'DAGS_FOLDER/s3postgress.py', '--cfg-path', '/tmp/tmpxnujuzl1']
+[2024-04-03T07:31:23.483+0000] {standard_task_runner.py:88} INFO - Job 1021: Subtask postgresstos3
+[2024-04-03T07:31:23.567+0000] {task_command.py:423} INFO - Running <TaskInstance: s3postgress.postgresstos3 manual__2024-04-03T07:21:07.655498+00:00 [running]> on host 41da1b14e620
+[2024-04-03T07:31:23.755+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='s3postgress' AIRFLOW_CTX_TASK_ID='postgresstos3' AIRFLOW_CTX_EXECUTION_DATE='2024-04-03T07:21:07.655498+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-03T07:21:07.655498+00:00'
+[2024-04-03T07:31:23.772+0000] {base.py:83} INFO - Using connection ID 'postgress_localhost' for task execution.
+[2024-04-03T07:31:23.813+0000] {s3postgress.py:40} INFO - Data has been written to the file: dags/get_orders2017-07-12.txt
+[2024-04-03T07:31:23.814+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/s3postgress.py", line 42, in postgresstos3
+    s3_hook.load_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 122, in wrapper
+    bound_args = function_signature.bind(*args, **kwargs)
+  File "/usr/local/lib/python3.8/inspect.py", line 3037, in bind
+    return self._bind(args, kwargs)
+  File "/usr/local/lib/python3.8/inspect.py", line 2952, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'filename'
+[2024-04-03T07:31:23.838+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=s3postgress, task_id=postgresstos3, execution_date=20240403T072107, start_date=20240403T073123, end_date=20240403T073123
+[2024-04-03T07:31:23.867+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1021 for task postgresstos3 (missing a required argument: 'filename'; 3814)
+[2024-04-03T07:31:23.895+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-03T07:31:23.923+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
