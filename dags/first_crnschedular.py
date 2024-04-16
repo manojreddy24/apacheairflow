@@ -28,9 +28,10 @@ default_args={
 with DAG(
     dag_id="first_cron",
     description="this is my first cron job",
-    start_date=datetime(2024,3,27),
+    start_date=datetime(2024,4,9),
     default_args=default_args,
-    schedule_interval="5 4 * * *"   
+    schedule_interval="19 18 * * *"
+    # catchup=False
 
 
 ) as dag:

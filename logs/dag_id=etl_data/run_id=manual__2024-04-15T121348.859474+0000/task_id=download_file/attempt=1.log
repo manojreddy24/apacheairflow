@@ -1,0 +1,27 @@
+[2024-04-15T12:13:50.867+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_data.download_file manual__2024-04-15T12:13:48.859474+00:00 [queued]>
+[2024-04-15T12:13:50.876+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_data.download_file manual__2024-04-15T12:13:48.859474+00:00 [queued]>
+[2024-04-15T12:13:50.877+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-15T12:13:50.892+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): download_file> on 2024-04-15 12:13:48.859474+00:00
+[2024-04-15T12:13:50.899+0000] {standard_task_runner.py:60} INFO - Started process 825 to run task
+[2024-04-15T12:13:50.903+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_data', 'download_file', 'manual__2024-04-15T12:13:48.859474+00:00', '--job-id', '1694', '--raw', '--subdir', 'DAGS_FOLDER/etl_data.py', '--cfg-path', '/tmp/tmptx2j01gh']
+[2024-04-15T12:13:50.905+0000] {standard_task_runner.py:88} INFO - Job 1694: Subtask download_file
+[2024-04-15T12:13:50.950+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_data.download_file manual__2024-04-15T12:13:48.859474+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-15T12:13:51.019+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_data' AIRFLOW_CTX_TASK_ID='download_file' AIRFLOW_CTX_EXECUTION_DATE='2024-04-15T12:13:48.859474+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-15T12:13:48.859474+00:00'
+[2024-04-15T12:13:51.020+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-15T12:13:51.021+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'wget -q -O /full/path/to/output/tolldata.tgz https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz']
+[2024-04-15T12:13:51.034+0000] {subprocess.py:86} INFO - Output:
+[2024-04-15T12:13:51.035+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: wget: command not found
+[2024-04-15T12:13:51.036+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2024-04-15T12:13:51.423+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2024-04-15T12:13:51.430+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_data, task_id=download_file, execution_date=20240415T121348, start_date=20240415T121350, end_date=20240415T121351
+[2024-04-15T12:13:51.456+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1694 for task download_file (Bash command failed. The command returned a non-zero exit code 127.; 825)
+[2024-04-15T12:13:51.477+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-15T12:13:51.518+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

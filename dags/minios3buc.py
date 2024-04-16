@@ -25,7 +25,7 @@ with DAG(
     task1=S3KeySensor(
         task_id="s1minio_sensor",
         bucket_name="airflow",
-        bucket_key="data.csv",
+        bucket_key="orders.csv",
         aws_conn_id="minin_s3", # same as connection id in airflow
         mode="poke",
         timeout=30,

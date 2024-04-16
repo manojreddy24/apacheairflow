@@ -25,12 +25,12 @@ with DAG(
 
 
 ) as dag:
-    def postgresstos3(pastd="2017-07-12", newd="2017-07-20"):
+    def postgresstos3(pastd="2017-07-10", newd="2017-07-30"):
         hook=PostgresHook(postgres_conn_id="postgress_localhost")
         connection=hook.get_conn()
         cursor=connection.cursor()
         file_name=f"dags/get_orders{pastd}.txt"
-        cursor.execute("SELECT * FROM orders where order_date >= DATE '2017-07-12' and order_date<= DATE '2017-07-20'")
+        cursor.execute("SELECT * FROM orders where order_date >= DATE '2017-06-12' and order_date<= DATE '2017-07-20'")
         with open(f"dags/get_orders{newd}.txt", "w") as f:
             csv_writer=csv.writer(f)
             csv_writer.writerows(i[0] for i in cursor.description)
@@ -41,7 +41,7 @@ with DAG(
         s3_hook=S3Hook(aws_conn_id="minin_s3")
         s3_hook.load_file(
             filename="dags/get_orders2017-07-20.txt",
-            key="orders/2017-07-20.txt",
+            key="orders/"+newd+".txt",
             bucket_name="airflow",
             replace=True
     )

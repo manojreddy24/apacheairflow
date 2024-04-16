@@ -1,0 +1,26 @@
+[2024-04-15T12:00:37.224+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extracting_files.extract_data_from_text scheduled__2024-04-04T00:00:00+00:00 [queued]>
+[2024-04-15T12:00:37.287+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extracting_files.extract_data_from_text scheduled__2024-04-04T00:00:00+00:00 [queued]>
+[2024-04-15T12:00:37.292+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-15T12:00:37.338+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_data_from_text> on 2024-04-04 00:00:00+00:00
+[2024-04-15T12:00:37.360+0000] {standard_task_runner.py:60} INFO - Started process 215 to run task
+[2024-04-15T12:00:37.390+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'extracting_files', 'extract_data_from_text', 'scheduled__2024-04-04T00:00:00+00:00', '--job-id', '1584', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmp2n4kplak']
+[2024-04-15T12:00:37.402+0000] {standard_task_runner.py:88} INFO - Job 1584: Subtask extract_data_from_text
+[2024-04-15T12:00:37.526+0000] {task_command.py:423} INFO - Running <TaskInstance: extracting_files.extract_data_from_text scheduled__2024-04-04T00:00:00+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-15T12:00:38.089+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extracting_files' AIRFLOW_CTX_TASK_ID='extract_data_from_text' AIRFLOW_CTX_EXECUTION_DATE='2024-04-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-04T00:00:00+00:00'
+[2024-04-15T12:00:38.093+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/files_extraction.py", line 61, in extract_data_from_text
+    with open(file_path) as f:
+IsADirectoryError: [Errno 21] Is a directory: '/opt/airflow'
+[2024-04-15T12:00:38.150+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=extracting_files, task_id=extract_data_from_text, execution_date=20240404T000000, start_date=20240415T120037, end_date=20240415T120038
+[2024-04-15T12:00:38.198+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1584 for task extract_data_from_text ([Errno 21] Is a directory: '/opt/airflow'; 215)
+[2024-04-15T12:00:38.295+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-15T12:00:38.436+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

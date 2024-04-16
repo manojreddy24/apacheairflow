@@ -47,7 +47,7 @@ with DAG(
         task_id="read_data",
         postgres_conn_id="postgress_localhost",
         sql="""
-        SELECT * FROM dag_runs
+        SELECT * FROM dag_runs limit 1
         """
 
 

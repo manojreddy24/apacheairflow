@@ -26,7 +26,7 @@ with DAG(
         bash_command="echo hello world, this is my second task",
 
     )
-    taks3=BashOperator(
+    task3=BashOperator(
         task_id="third_task",
         bash_command="echo hello world, this is my third task"
     )
@@ -37,7 +37,6 @@ with DAG(
    # task dependency method 2
     #or use bitwise oprators
 
-    # task1 >> task2
-    # task1 >> taks3
+    task1 >> task3 >>task2
 #task dependency method 3
-    task1>>[task2,taks3] # task1 will run first then task2 and task3
+    # task1>>[task2,taks3] # task1 will run first then task2 and task3

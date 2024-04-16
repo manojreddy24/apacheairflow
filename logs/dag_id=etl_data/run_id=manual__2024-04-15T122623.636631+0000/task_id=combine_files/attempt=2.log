@@ -1,0 +1,27 @@
+[2024-04-15T12:31:26.524+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_data.combine_files manual__2024-04-15T12:26:23.636631+00:00 [queued]>
+[2024-04-15T12:31:26.533+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_data.combine_files manual__2024-04-15T12:26:23.636631+00:00 [queued]>
+[2024-04-15T12:31:26.533+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-04-15T12:31:26.545+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): combine_files> on 2024-04-15 12:26:23.636631+00:00
+[2024-04-15T12:31:26.550+0000] {standard_task_runner.py:60} INFO - Started process 1367 to run task
+[2024-04-15T12:31:26.553+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_data', 'combine_files', 'manual__2024-04-15T12:26:23.636631+00:00', '--job-id', '1799', '--raw', '--subdir', 'DAGS_FOLDER/etl_data.py', '--cfg-path', '/tmp/tmph5i3667m']
+[2024-04-15T12:31:26.555+0000] {standard_task_runner.py:88} INFO - Job 1799: Subtask combine_files
+[2024-04-15T12:31:26.591+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_data.combine_files manual__2024-04-15T12:26:23.636631+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-15T12:31:26.652+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_data' AIRFLOW_CTX_TASK_ID='combine_files' AIRFLOW_CTX_EXECUTION_DATE='2024-04-15T12:26:23.636631+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-15T12:26:23.636631+00:00'
+[2024-04-15T12:31:26.653+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-04-15T12:31:26.654+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cat ../destination/csv_data.csv ../destination/tsv_data.csv ../destination/txt_data.csv > ../destination/combined_data.csv']
+[2024-04-15T12:31:26.664+0000] {subprocess.py:86} INFO - Output:
+[2024-04-15T12:31:26.665+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: ../destination/combined_data.csv: No such file or directory
+[2024-04-15T12:31:26.666+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-04-15T12:31:26.675+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-04-15T12:31:26.678+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_data, task_id=combine_files, execution_date=20240415T122623, start_date=20240415T123126, end_date=20240415T123126
+[2024-04-15T12:31:26.819+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 1799 for task combine_files (Bash command failed. The command returned a non-zero exit code 1.; 1367)
+[2024-04-15T12:31:26.846+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-15T12:31:26.858+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
