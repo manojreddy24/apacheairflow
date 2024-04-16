@@ -1,0 +1,17 @@
+[2024-04-16T18:20:23.433+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.exst manual__2024-04-16T18:20:21.775429+00:00 [queued]>
+[2024-04-16T18:20:23.441+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.exst manual__2024-04-16T18:20:21.775429+00:00 [queued]>
+[2024-04-16T18:20:23.441+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-16T18:20:23.455+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): exst> on 2024-04-16 18:20:21.775429+00:00
+[2024-04-16T18:20:23.462+0000] {standard_task_runner.py:60} INFO - Started process 1613 to run task
+[2024-04-16T18:20:23.469+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'exst', 'manual__2024-04-16T18:20:21.775429+00:00', '--job-id', '2018', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmp_w9ppfta']
+[2024-04-16T18:20:23.472+0000] {standard_task_runner.py:88} INFO - Job 2018: Subtask exst
+[2024-04-16T18:20:23.513+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.exst manual__2024-04-16T18:20:21.775429+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-16T18:20:23.579+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='exst' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T18:20:21.775429+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-16T18:20:21.775429+00:00'
+[2024-04-16T18:20:23.581+0000] {s3.py:1393} INFO - Downloading source S3 file from Bucket orders.csv with path ***
+[2024-04-16T18:20:23.588+0000] {base.py:83} INFO - Using connection ID 'minin_s3' for task execution.
+[2024-04-16T18:20:23.589+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minin_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-04-16T18:20:23.704+0000] {logging_mixin.py:188} INFO - Error downloading file: An error occurred (404) when calling the HeadObject operation: Not Found
+[2024-04-16T18:20:23.705+0000] {python.py:202} INFO - Done. Returned value was: /opt/***/dags
+[2024-04-16T18:20:23.736+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=exst, execution_date=20240416T182021, start_date=20240416T182023, end_date=20240416T182023
+[2024-04-16T18:20:23.762+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-16T18:20:23.783+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,17 @@
+[2024-04-16T02:22:13.366+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.upload_to_s3 manual__2024-04-15T14:49:18.793713+00:00 [queued]>
+[2024-04-16T02:22:13.374+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.upload_to_s3 manual__2024-04-15T14:49:18.793713+00:00 [queued]>
+[2024-04-16T02:22:13.375+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-04-16T02:22:13.387+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): upload_to_s3> on 2024-04-15 14:49:18.793713+00:00
+[2024-04-16T02:22:13.393+0000] {standard_task_runner.py:60} INFO - Started process 219 to run task
+[2024-04-16T02:22:13.395+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'upload_to_s3', 'manual__2024-04-15T14:49:18.793713+00:00', '--job-id', '1905', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpu6z77dja']
+[2024-04-16T02:22:13.397+0000] {standard_task_runner.py:88} INFO - Job 1905: Subtask upload_to_s3
+[2024-04-16T02:22:13.434+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.upload_to_s3 manual__2024-04-15T14:49:18.793713+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-16T02:22:13.499+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='upload_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-04-15T14:49:18.793713+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-15T14:49:18.793713+00:00'
+[2024-04-16T02:22:13.508+0000] {base.py:83} INFO - Using connection ID 'minin_s3' for task execution.
+[2024-04-16T02:22:13.509+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minin_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-04-16T02:22:13.510+0000] {warnings.py:109} WARNING - <string>:9: AirflowProviderDeprecationWarning: extra['host'] is deprecated and will be removed in a future release. Please set extra['endpoint_url'] instead
+
+[2024-04-16T02:22:13.831+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-16T02:22:13.839+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=upload_to_s3, execution_date=20240415T144918, start_date=20240416T022213, end_date=20240416T022213
+[2024-04-16T02:22:13.889+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-16T02:22:13.907+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

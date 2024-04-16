@@ -1,0 +1,18 @@
+[2024-04-16T18:17:23.832+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.exst manual__2024-04-16T18:17:22.194943+00:00 [queued]>
+[2024-04-16T18:17:23.840+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.exst manual__2024-04-16T18:17:22.194943+00:00 [queued]>
+[2024-04-16T18:17:23.841+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-16T18:17:23.853+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): exst> on 2024-04-16 18:17:22.194943+00:00
+[2024-04-16T18:17:23.859+0000] {standard_task_runner.py:60} INFO - Started process 1562 to run task
+[2024-04-16T18:17:23.861+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'exst', 'manual__2024-04-16T18:17:22.194943+00:00', '--job-id', '2017', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmp_q2jeu99']
+[2024-04-16T18:17:23.863+0000] {standard_task_runner.py:88} INFO - Job 2017: Subtask exst
+[2024-04-16T18:17:23.899+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.exst manual__2024-04-16T18:17:22.194943+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-16T18:17:23.967+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='exst' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T18:17:22.194943+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-16T18:17:22.194943+00:00'
+[2024-04-16T18:17:23.969+0000] {s3.py:1393} INFO - Downloading source S3 file from Bucket orders/tolldata.tgz with path vehicle
+[2024-04-16T18:17:23.977+0000] {base.py:83} INFO - Using connection ID 'minin_s3' for task execution.
+[2024-04-16T18:17:23.978+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minin_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-04-16T18:17:24.050+0000] {logging_mixin.py:188} INFO - Error downloading file: Parameter validation failed:
+Invalid bucket name "orders/tolldata.tgz": Bucket name must match the regex "^[a-zA-Z0-9.\-_]{1,255}$" or be an ARN matching the regex "^arn:(aws).*:(s3|s3-object-lambda):[a-z\-0-9]*:[0-9]{12}:accesspoint[/:][a-zA-Z0-9\-.]{1,63}$|^arn:(aws).*:s3-outposts:[a-z\-0-9]+:[0-9]{12}:outpost[/:][a-zA-Z0-9\-]{1,63}[/:]accesspoint[/:][a-zA-Z0-9\-]{1,63}$"
+[2024-04-16T18:17:24.051+0000] {python.py:202} INFO - Done. Returned value was: /opt/***/dags
+[2024-04-16T18:17:24.069+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=exst, execution_date=20240416T181722, start_date=20240416T181723, end_date=20240416T181724
+[2024-04-16T18:17:24.114+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-16T18:17:24.128+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,15 @@
+[2024-04-16T02:55:56.376+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.create_temporary_directory manual__2024-04-16T02:35:48.776549+00:00 [queued]>
+[2024-04-16T02:55:56.386+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.create_temporary_directory manual__2024-04-16T02:35:48.776549+00:00 [queued]>
+[2024-04-16T02:55:56.387+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-04-16T02:55:56.401+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): create_temporary_directory> on 2024-04-16 02:35:48.776549+00:00
+[2024-04-16T02:55:56.410+0000] {standard_task_runner.py:60} INFO - Started process 850 to run task
+[2024-04-16T02:55:56.420+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'create_temporary_directory', 'manual__2024-04-16T02:35:48.776549+00:00', '--job-id', '1938', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpy0s9dram']
+[2024-04-16T02:55:56.427+0000] {standard_task_runner.py:88} INFO - Job 1938: Subtask create_temporary_directory
+[2024-04-16T02:55:56.510+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.create_temporary_directory manual__2024-04-16T02:35:48.776549+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-16T02:55:56.597+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='create_temporary_directory' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T02:35:48.776549+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-16T02:35:48.776549+00:00'
+[2024-04-16T02:55:56.601+0000] {logging_mixin.py:188} INFO - Temporary directory created: /opt/***/dags/tmp3prw41zk
+[2024-04-16T02:55:56.603+0000] {logging_mixin.py:188} INFO - Temporary file created: /opt/***/dags/tmp3prw41zk/temp_file2.txt
+[2024-04-16T02:55:56.607+0000] {python.py:202} INFO - Done. Returned value was: /opt/***/dags/tmp3prw41zk/temp_file2.txt
+[2024-04-16T02:55:56.626+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=create_temporary_directory, execution_date=20240416T023548, start_date=20240416T025556, end_date=20240416T025556
+[2024-04-16T02:55:56.674+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-16T02:55:56.689+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

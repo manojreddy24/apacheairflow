@@ -1,0 +1,19 @@
+[2024-04-16T02:31:20.865+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.extract_files manual__2024-04-16T02:26:17.538757+00:00 [queued]>
+[2024-04-16T02:31:20.872+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.extract_files manual__2024-04-16T02:26:17.538757+00:00 [queued]>
+[2024-04-16T02:31:20.873+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 4
+[2024-04-16T02:31:20.885+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_files> on 2024-04-16 02:26:17.538757+00:00
+[2024-04-16T02:31:20.891+0000] {standard_task_runner.py:60} INFO - Started process 413 to run task
+[2024-04-16T02:31:20.893+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'extract_files', 'manual__2024-04-16T02:26:17.538757+00:00', '--job-id', '1920', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpnua253yq']
+[2024-04-16T02:31:20.895+0000] {standard_task_runner.py:88} INFO - Job 1920: Subtask extract_files
+[2024-04-16T02:31:20.928+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.extract_files manual__2024-04-16T02:26:17.538757+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-16T02:31:20.988+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='extract_files' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T02:26:17.538757+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-16T02:26:17.538757+00:00'
+[2024-04-16T02:31:20.989+0000] {s3.py:1393} INFO - Downloading source S3 file from Bucket vehicle with path orders/tolldata.tgz
+[2024-04-16T02:31:20.996+0000] {base.py:83} INFO - Using connection ID 'minin_s3' for task execution.
+[2024-04-16T02:31:20.997+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minin_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-04-16T02:31:20.998+0000] {warnings.py:109} WARNING - <string>:9: AirflowProviderDeprecationWarning: extra['host'] is deprecated and will be removed in a future release. Please set extra['endpoint_url'] instead
+
+[2024-04-16T02:31:21.145+0000] {logging_mixin.py:188} INFO - Error: An unexpected error occurred: [Errno 21] Is a directory: 'dags/'
+[2024-04-16T02:31:21.146+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-16T02:31:21.153+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=extract_files, execution_date=20240416T022617, start_date=20240416T023120, end_date=20240416T023121
+[2024-04-16T02:31:21.186+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-16T02:31:21.207+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
