@@ -537,3 +537,262 @@
 [2024-04-17T16:44:08.686+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:44:08.686+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-04-17T16:44:08.705+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:44:08.705+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
 [2024-04-17T16:44:08.720+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.072 seconds
+[2024-04-17T16:44:38.791+0000] {processor.py:161} INFO - Started process (PID=1627) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:44:38.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:44:38.793+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:44:38.793+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:44:38.809+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:44:38.825+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:44:38.824+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:44:38.843+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:44:38.843+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:44:38.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.073 seconds
+[2024-04-17T16:45:08.958+0000] {processor.py:161} INFO - Started process (PID=1647) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:45:08.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:45:08.961+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:45:08.960+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:45:08.978+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:45:08.993+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:45:08.993+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:45:09.013+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:45:09.012+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:45:09.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.076 seconds
+[2024-04-17T16:45:39.215+0000] {processor.py:161} INFO - Started process (PID=1667) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:45:39.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:45:39.220+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:45:39.219+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:45:39.247+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:45:39.271+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:45:39.271+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:45:39.293+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:45:39.293+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:45:39.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.101 seconds
+[2024-04-17T16:46:09.437+0000] {processor.py:161} INFO - Started process (PID=1687) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:46:09.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:46:09.440+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:46:09.439+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:46:09.456+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:46:09.473+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:46:09.472+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:46:09.490+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:46:09.490+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:46:09.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.074 seconds
+[2024-04-17T16:46:39.602+0000] {processor.py:161} INFO - Started process (PID=1707) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:46:39.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:46:39.605+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:46:39.605+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:46:39.620+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:46:39.636+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:46:39.636+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:46:39.654+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:46:39.654+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:46:39.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.069 seconds
+[2024-04-17T16:47:09.906+0000] {processor.py:161} INFO - Started process (PID=1727) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:47:09.908+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:47:09.909+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:47:09.909+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:47:09.926+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:47:09.944+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:47:09.943+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:47:09.963+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:47:09.963+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:47:09.979+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.075 seconds
+[2024-04-17T16:47:40.283+0000] {processor.py:161} INFO - Started process (PID=1747) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:47:40.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:47:40.285+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:47:40.285+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:47:40.302+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:47:40.319+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:47:40.319+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:47:40.337+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:47:40.337+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:47:40.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.074 seconds
+[2024-04-17T16:48:11.089+0000] {processor.py:161} INFO - Started process (PID=1767) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:48:11.090+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:48:11.092+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:48:11.092+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:48:11.107+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:48:11.125+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:48:11.124+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:48:11.144+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:48:11.144+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:48:11.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.081 seconds
+[2024-04-17T16:48:41.345+0000] {processor.py:161} INFO - Started process (PID=1787) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:48:41.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:48:41.347+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:48:41.347+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:48:41.363+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:48:41.379+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:48:41.379+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:48:41.400+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:48:41.400+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:48:41.418+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.075 seconds
+[2024-04-17T16:49:11.498+0000] {processor.py:161} INFO - Started process (PID=1807) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:49:11.499+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:49:11.500+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:49:11.500+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:49:11.516+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:49:11.533+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:49:11.533+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:49:11.551+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:49:11.551+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:49:11.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.073 seconds
+[2024-04-17T16:49:41.724+0000] {processor.py:161} INFO - Started process (PID=1827) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:49:41.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:49:41.726+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:49:41.726+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:49:41.744+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:49:41.763+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:49:41.763+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:49:41.781+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:49:41.780+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:49:41.796+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.075 seconds
+[2024-04-17T16:50:11.872+0000] {processor.py:161} INFO - Started process (PID=1847) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:50:11.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:50:11.875+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:50:11.874+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:50:11.894+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:50:11.912+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:50:11.912+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:50:11.932+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:50:11.932+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:50:11.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.078 seconds
+[2024-04-17T16:50:42.852+0000] {processor.py:161} INFO - Started process (PID=1867) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:50:42.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:50:42.855+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:50:42.854+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:50:42.873+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:50:42.894+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:50:42.893+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:50:42.917+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:50:42.917+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:50:42.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.090 seconds
+[2024-04-17T16:51:13.062+0000] {processor.py:161} INFO - Started process (PID=1889) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:51:13.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:51:13.063+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:51:13.063+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:51:13.079+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:51:13.095+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:51:13.095+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:51:13.112+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:51:13.112+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:51:13.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.070 seconds
+[2024-04-17T16:51:43.325+0000] {processor.py:161} INFO - Started process (PID=1911) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:51:43.326+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:51:43.327+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:51:43.327+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:51:43.349+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:51:43.366+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:51:43.366+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:51:43.384+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:51:43.384+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:51:43.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.079 seconds
+[2024-04-17T16:52:13.725+0000] {processor.py:161} INFO - Started process (PID=1931) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:52:13.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:52:13.728+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:52:13.728+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:52:13.744+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:52:13.760+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:52:13.759+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:52:13.777+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:52:13.777+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:52:13.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.069 seconds
+[2024-04-17T16:52:44.662+0000] {processor.py:161} INFO - Started process (PID=1951) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:52:44.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:52:44.665+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:52:44.665+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:52:44.681+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:52:44.698+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:52:44.698+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:52:44.715+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:52:44.715+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:52:44.730+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.071 seconds
+[2024-04-17T16:53:14.803+0000] {processor.py:161} INFO - Started process (PID=1971) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:53:14.804+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:53:14.806+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:53:14.806+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:53:14.822+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:53:14.839+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:53:14.838+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:53:14.856+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:53:14.855+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:53:14.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.071 seconds
+[2024-04-17T16:53:45.136+0000] {processor.py:161} INFO - Started process (PID=1991) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:53:45.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:53:45.138+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:53:45.138+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:53:45.154+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:53:45.171+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:53:45.171+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:53:45.189+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:53:45.189+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:53:45.205+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.071 seconds
+[2024-04-17T16:54:15.480+0000] {processor.py:161} INFO - Started process (PID=2011) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:54:15.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:54:15.483+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:54:15.483+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:54:15.499+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:54:15.516+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:54:15.515+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:54:15.534+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:54:15.533+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:54:15.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.073 seconds
+[2024-04-17T16:54:45.901+0000] {processor.py:161} INFO - Started process (PID=2031) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:54:45.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:54:45.903+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:54:45.903+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:54:45.920+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:54:45.936+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:54:45.935+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:54:45.955+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:54:45.955+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:54:45.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.072 seconds
+[2024-04-17T16:55:16.681+0000] {processor.py:161} INFO - Started process (PID=2051) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:55:16.682+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:55:16.684+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:55:16.684+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:55:16.699+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:55:16.715+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:55:16.715+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:55:16.733+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:55:16.732+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:55:16.748+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.069 seconds
+[2024-04-17T16:55:46.803+0000] {processor.py:161} INFO - Started process (PID=2071) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:55:46.804+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:55:46.806+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:55:46.806+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:55:46.820+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:55:46.837+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:55:46.837+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:55:46.854+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:55:46.854+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:55:46.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.069 seconds
+[2024-04-17T16:56:17.692+0000] {processor.py:161} INFO - Started process (PID=2091) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:56:17.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:56:17.698+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:56:17.697+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:56:17.715+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:56:17.731+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:56:17.731+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:56:17.749+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:56:17.749+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:56:17.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.076 seconds
+[2024-04-17T16:56:47.822+0000] {processor.py:161} INFO - Started process (PID=2111) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:56:47.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:56:47.824+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:56:47.824+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:56:47.843+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:56:47.860+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:56:47.860+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:56:47.877+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:56:47.877+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:56:47.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.076 seconds
+[2024-04-17T16:57:17.957+0000] {processor.py:161} INFO - Started process (PID=2131) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:57:17.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:57:17.960+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:57:17.960+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:57:17.980+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:57:18.000+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:57:17.999+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:57:18.022+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:57:18.021+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:57:18.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.083 seconds
+[2024-04-17T16:57:48.164+0000] {processor.py:161} INFO - Started process (PID=2151) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:57:48.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:57:48.166+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:57:48.166+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:57:48.183+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:57:48.199+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:57:48.199+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:57:48.217+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:57:48.217+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:57:48.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.070 seconds
+[2024-04-17T16:58:18.955+0000] {processor.py:161} INFO - Started process (PID=2171) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:58:18.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:58:18.958+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:58:18.957+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:58:18.974+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:58:18.990+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:58:18.990+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:58:19.010+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:58:19.009+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:58:19.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.077 seconds
+[2024-04-17T16:58:49.779+0000] {processor.py:161} INFO - Started process (PID=2191) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:58:49.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:58:49.782+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:58:49.781+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:58:49.798+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:58:49.814+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:58:49.814+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:58:49.832+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:58:49.832+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:58:49.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.072 seconds
+[2024-04-17T16:59:20.661+0000] {processor.py:161} INFO - Started process (PID=2211) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:59:20.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:59:20.663+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:59:20.663+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:59:20.680+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:59:20.697+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:59:20.697+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:59:20.716+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:59:20.716+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:59:20.731+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.073 seconds
+[2024-04-17T16:59:50.969+0000] {processor.py:161} INFO - Started process (PID=2233) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:59:50.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T16:59:50.973+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:59:50.973+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:59:50.998+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T16:59:51.017+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:59:51.017+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:59:51.036+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:59:51.035+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T16:59:51.051+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.084 seconds
+[2024-04-17T17:00:21.120+0000] {processor.py:161} INFO - Started process (PID=2257) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:00:21.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T17:00:21.124+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:00:21.123+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:00:21.142+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:00:21.159+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:00:21.159+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T17:00:21.178+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:00:21.178+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T17:00:21.194+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.076 seconds
+[2024-04-17T17:00:51.358+0000] {processor.py:161} INFO - Started process (PID=2277) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:00:51.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T17:00:51.361+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:00:51.360+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:00:51.378+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:00:51.395+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:00:51.394+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T17:00:51.411+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:00:51.411+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T17:00:51.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.072 seconds
+[2024-04-17T17:01:21.626+0000] {processor.py:161} INFO - Started process (PID=2297) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:01:21.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T17:01:21.628+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:01:21.628+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:01:21.644+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:01:21.661+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:01:21.660+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T17:01:21.680+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:01:21.680+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T17:01:21.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.072 seconds
+[2024-04-17T17:01:52.049+0000] {processor.py:161} INFO - Started process (PID=2317) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:01:52.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T17:01:52.051+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:01:52.051+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:01:52.067+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:01:52.083+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:01:52.082+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T17:01:52.100+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:01:52.100+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T17:01:52.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.068 seconds
+[2024-04-17T17:02:22.324+0000] {processor.py:161} INFO - Started process (PID=2337) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:02:22.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T17:02:22.327+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:02:22.327+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:02:22.345+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:02:22.363+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:02:22.363+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T17:02:22.382+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:02:22.382+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T17:02:22.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.077 seconds
+[2024-04-17T17:04:48.480+0000] {processor.py:161} INFO - Started process (PID=2353) to work on /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:04:48.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minios3buc.py for tasks to queue
+[2024-04-17T17:04:48.482+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:04:48.482+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:04:48.501+0000] {processor.py:840} INFO - DAG(s) 'miniouss3dag' retrieved from /opt/airflow/dags/minios3buc.py
+[2024-04-17T17:04:48.520+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:04:48.520+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T17:04:48.543+0000] {logging_mixin.py:188} INFO - [2024-04-17T17:04:48.542+0000] {dag.py:3834} INFO - Setting next_dagrun for miniouss3dag to 2024-04-17 04:05:00+00:00, run_after=2024-04-18 04:05:00+00:00
+[2024-04-17T17:04:48.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minios3buc.py took 0.089 seconds

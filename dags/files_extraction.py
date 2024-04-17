@@ -160,6 +160,97 @@ with DAG(
         new_files = os.listdir(new_directory)
 
         return new_files
+    def extract_data_from_csv():
+        current_script_directory=os.path.dirname(__file__)
+        parent_directory = os.path.join(current_script_directory, "..")
+        full_folder_path = os.path.join(parent_directory, "data")
+        extraction_done_folder=os.path.join(parent_directory, "extraction_done")
+        final_path=os.path.join(parent_directory, "destination")
+
+        
+        files = os.listdir(full_folder_path)
+        # Initialize an empty list to store the modified data
+        modified_data = []
+       
+        # full_folder_path = os.path.join(cwd, folder_path)
+
+        # Check if the folder exists
+        if os.path.exists(full_folder_path) and os.path.isdir(full_folder_path):
+            # Create the extraction_done folder if it doesn't exist
+            # extraction_done_folder = os.path.join(cwd, "../extraction_done")
+            print(extraction_done_folder)
+            # final_path = os.path.join(cwd, "../destination")
+            try:
+                os.mkdir(extraction_done_folder)
+                os.mkdir(final_path)
+                print("Directory created successfully.")
+            except FileExistsError:
+                print("Directory already exists.")
+             
+
+
+          
+            
+            # Initialize a counter to keep track of the number of CSV files
+            csv_count = 0
+            
+            # Iterate over the files
+            for file in files:
+                # Check if the file is a CSV file
+                if file.endswith(".csv"):
+                    # Increment the CSV file counter
+                    csv_count += 1
+                    
+                    # Construct the full path to the CSV file
+                    file_path = os.path.join(full_folder_path, file)
+
+                    # Read the contents of the CSV file
+                    with open(file_path, 'r') as f:
+                        # Skip the header line
+                        # next(f)
+                        # Read the remaining lines
+                        reader = csv.reader(f)
+                        for row in reader:
+                            # Insert rows for Rowid, Timestamp, Anonymized Vehicle number, and Vehicle type
+                            modified_row = [
+                                csv_count,  # Rowid (using csv_count as an example)
+                            # Timestamp
+                                row[1],  # Anonymized Vehicle number (assuming it's the first column)
+                                row[2],  # Vehicle type (assuming it's the second column)
+                                row[3],
+                            ]
+                            # Append the modified row to the list
+                            modified_data.append(modified_row)
+
+                    # Move the source CSV file to the extraction_done folder
+                    
+                    shutil.move(file_path, extraction_done_folder)
+                    print(f"Moved {file} to extraction_done folder.")
+
+            # Print the total number of CSV files found
+            print("Total CSV files found:", csv_count)
+            
+            # Check if any CSV files were found
+            if modified_data:
+                # Define the path for the new CSV file
+                new_csv_file_path = os.path.join(final_path,"csv_data.csv")  # Adjust the path as needed
+                
+                # Write the modified data to a new CSV file
+                with open(new_csv_file_path, 'w', newline='') as new_csv_file:
+                    writer = csv.writer(new_csv_file)
+                    # Write header
+                    writer.writerow(["Rowid", "Timestamp", "Anonymized Vehicle number", "Vehicle type"])
+                    # Write data
+                    writer.writerows(modified_data)
+                
+                print(f"New CSV file created: {new_csv_file_path}")
+            else:
+                print("No CSV files found in the folder.")
+        else:
+            print(f"Folder {full_folder_path} does not exist.")
+        final_path_files=os.listdir(final_path)
+
+        return final_path_files
     
 
 
@@ -185,6 +276,10 @@ with DAG(
         task_id="delete_files_with_dot_prefix",
         python_callable=delete_files_with_dot_prefix
     )
+    task7=PythonOperator(
+        task_id="extract_data_from_csv",
+        python_callable=extract_data_from_csv
+    )
     # task1>>task2
     # task2>>task3
-    task2>>task4>>task5 >>task6
+    task2>>task4>>task5 >>task6 >>task7
