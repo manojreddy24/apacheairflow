@@ -1,0 +1,15 @@
+[2024-04-17T18:22:01.275+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.uploadmergedfile_to_s3 manual__2024-04-17T18:21:45.868719+00:00 [queued]>
+[2024-04-17T18:22:01.282+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.uploadmergedfile_to_s3 manual__2024-04-17T18:21:45.868719+00:00 [queued]>
+[2024-04-17T18:22:01.283+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-17T18:22:01.293+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): uploadmergedfile_to_s3> on 2024-04-17 18:21:45.868719+00:00
+[2024-04-17T18:22:01.300+0000] {standard_task_runner.py:60} INFO - Started process 2732 to run task
+[2024-04-17T18:22:01.303+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'uploadmergedfile_to_s3', 'manual__2024-04-17T18:21:45.868719+00:00', '--job-id', '2232', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpqligba1m']
+[2024-04-17T18:22:01.305+0000] {standard_task_runner.py:88} INFO - Job 2232: Subtask uploadmergedfile_to_s3
+[2024-04-17T18:22:01.339+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.uploadmergedfile_to_s3 manual__2024-04-17T18:21:45.868719+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-17T18:22:01.404+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='uploadmergedfile_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-04-17T18:21:45.868719+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-17T18:21:45.868719+00:00'
+[2024-04-17T18:22:01.412+0000] {base.py:83} INFO - Using connection ID 'minin_s3' for task execution.
+[2024-04-17T18:22:01.413+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minin_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-04-17T18:22:01.755+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-17T18:22:01.763+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=uploadmergedfile_to_s3, execution_date=20240417T182145, start_date=20240417T182201, end_date=20240417T182201
+[2024-04-17T18:22:01.795+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-17T18:22:01.808+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

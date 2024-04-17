@@ -1,0 +1,17 @@
+[2024-04-17T17:59:19.361+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.delete_files_with_dot_prefix manual__2024-04-17T17:59:12.095194+00:00 [queued]>
+[2024-04-17T17:59:19.369+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.delete_files_with_dot_prefix manual__2024-04-17T17:59:12.095194+00:00 [queued]>
+[2024-04-17T17:59:19.370+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-17T17:59:19.381+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): delete_files_with_dot_prefix> on 2024-04-17 17:59:12.095194+00:00
+[2024-04-17T17:59:19.387+0000] {standard_task_runner.py:60} INFO - Started process 2242 to run task
+[2024-04-17T17:59:19.389+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'delete_files_with_dot_prefix', 'manual__2024-04-17T17:59:12.095194+00:00', '--job-id', '2184', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpg1e6yq5n']
+[2024-04-17T17:59:19.391+0000] {standard_task_runner.py:88} INFO - Job 2184: Subtask delete_files_with_dot_prefix
+[2024-04-17T17:59:19.425+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.delete_files_with_dot_prefix manual__2024-04-17T17:59:12.095194+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-17T17:59:19.486+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='delete_files_with_dot_prefix' AIRFLOW_CTX_EXECUTION_DATE='2024-04-17T17:59:12.095194+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-17T17:59:12.095194+00:00'
+[2024-04-17T17:59:19.488+0000] {logging_mixin.py:188} INFO - Files in the directory: ['tollplaza-data.tsv', 'fileformats.txt', '._vehicle-data.csv', '._tollplaza-data.tsv', 'vehicle-data.csv', 'payment-data.txt']
+[2024-04-17T17:59:19.488+0000] {logging_mixin.py:188} INFO - File 'fileformats.txt' deleted successfully.
+[2024-04-17T17:59:19.489+0000] {logging_mixin.py:188} INFO - Deleted file: /opt/***/dags/../data/._vehicle-data.csv
+[2024-04-17T17:59:19.489+0000] {logging_mixin.py:188} INFO - Deleted file: /opt/***/dags/../data/._tollplaza-data.tsv
+[2024-04-17T17:59:19.489+0000] {python.py:202} INFO - Done. Returned value was: ['tollplaza-data.tsv', 'vehicle-data.csv', 'payment-data.txt']
+[2024-04-17T17:59:19.505+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=delete_files_with_dot_prefix, execution_date=20240417T175912, start_date=20240417T175919, end_date=20240417T175919
+[2024-04-17T17:59:19.522+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-17T17:59:19.543+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

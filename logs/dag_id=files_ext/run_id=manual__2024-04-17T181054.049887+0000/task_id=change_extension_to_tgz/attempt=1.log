@@ -1,0 +1,14 @@
+[2024-04-17T18:10:56.772+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.change_extension_to_tgz manual__2024-04-17T18:10:54.049887+00:00 [queued]>
+[2024-04-17T18:10:56.785+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.change_extension_to_tgz manual__2024-04-17T18:10:54.049887+00:00 [queued]>
+[2024-04-17T18:10:56.786+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-17T18:10:56.811+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): change_extension_to_tgz> on 2024-04-17 18:10:54.049887+00:00
+[2024-04-17T18:10:56.823+0000] {standard_task_runner.py:60} INFO - Started process 2467 to run task
+[2024-04-17T18:10:56.827+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'change_extension_to_tgz', 'manual__2024-04-17T18:10:54.049887+00:00', '--job-id', '2201', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpslyg65fw']
+[2024-04-17T18:10:56.830+0000] {standard_task_runner.py:88} INFO - Job 2201: Subtask change_extension_to_tgz
+[2024-04-17T18:10:56.890+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.change_extension_to_tgz manual__2024-04-17T18:10:54.049887+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-17T18:10:57.021+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='change_extension_to_tgz' AIRFLOW_CTX_EXECUTION_DATE='2024-04-17T18:10:54.049887+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-17T18:10:54.049887+00:00'
+[2024-04-17T18:10:57.026+0000] {logging_mixin.py:188} INFO - Changed extension of ***_tmp_roory8mu to .tgz
+[2024-04-17T18:10:57.027+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-04-17T18:10:57.036+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=change_extension_to_tgz, execution_date=20240417T181054, start_date=20240417T181056, end_date=20240417T181057
+[2024-04-17T18:10:57.080+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-17T18:10:57.107+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

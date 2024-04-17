@@ -462,6 +462,79 @@ with DAG(
         final_path_files=os.listdir(final_path)
 
         return final_path_files
+    def merge_csv_files():
+        # Specify the paths to the CSV files
+        current_script_directory=os.path.dirname(__file__)
+        parent_directory = os.path.join(current_script_directory, "..")
+        full_folder_path = os.path.join(parent_directory, "data")
+        extraction_done_folder=os.path.join(parent_directory, "extraction_done")
+        final_path=os.path.join(parent_directory, "destination")
+
+        
+        # files = os.listdir(final_path)
+        print("files",final_path)
+        csv_file1 = os.path.join(final_path, 'csv_data.csv')
+        # print(csv_file1)
+        csv_file2 = os.path.join(final_path, 'tsv_data.csv')
+        csv_file3 = os.path.join(final_path, 'txt_data.csv')
+    
+        # Read each CSV file into a pandas DataFrame
+        df1 = pd.read_csv(csv_file1)
+        df2 = pd.read_csv(csv_file2)
+        df3 = pd.read_csv(csv_file3)
+    # Concatenate the columns from each file
+        merged_df = pd.concat([df1, df2, df3], axis=1)
+        
+        # Merge the DataFrames based on common columns
+    
+        
+        
+        # Merge the DataFrames
+        # merged_df = pd.concat([df1, df2, df3], ignore_index=True)
+        
+        # Write the merged DataFrame to a new CSV file
+        output_file_path = os.path.join(final_path, "merged.csv")
+        merged_df.to_csv(output_file_path, index=False)
+        print("pdf merged successfully to {output_file_path}")
+        final_path_files=os.listdir(final_path)
+
+        return final_path_files
+    def transform_data():
+        current_script_directory=os.path.dirname(__file__)
+        parent_directory = os.path.join(current_script_directory, "..")
+        full_folder_path = os.path.join(parent_directory, "data")
+        extraction_done_folder=os.path.join(parent_directory, "extraction_done")
+        final_path=os.path.join(parent_directory, "destination")
+
+        
+        file_path = os.path.join(final_path, "merged.csv")
+
+        # input_file = "../destination/merged.csv"
+        df = pd.read_csv(file_path)
+        # Perform data transformation here
+        df['Vehicle type'] = df['Vehicle type'].str.upper()
+        output_file_path = os.path.join(final_path, 'transformed_data.csv')
+        df.to_csv(output_file_path, index=False)  
+        final_path_files=os.listdir(final_path)
+
+        return final_path_files
+    def uploadmergedfile_to_s3():
+        current_script_directory=os.path.dirname(__file__)
+        parent_directory = os.path.join(current_script_directory, "..")
+        full_folder_path = os.path.join(parent_directory, "data")
+        extraction_done_folder=os.path.join(parent_directory, "extraction_done")
+        final_path=os.path.join(parent_directory, "destination")
+
+        
+        file_path = os.path.join(final_path, "transformed_data.csv")
+        s3_hook=S3Hook(aws_conn_id="minin_s3")
+        s3_hook.load_file(
+            filename=file_path,
+            key="orders/transformed_data.csv",
+            bucket_name="vehicle",
+            replace=True
+    )
+
 
 
 
@@ -505,6 +578,21 @@ with DAG(
         python_callable=extract_data_from_fixed_width
     
     )
+    task10=PythonOperator(
+        task_id="merge_csv_files",
+        python_callable=merge_csv_files
+    
+    )
+    task11=PythonOperator(
+        task_id="transform_data",
+        python_callable=transform_data
+    
+    )
+    task12=PythonOperator(
+        task_id="uploadmergedfile_to_s3",
+        python_callable=uploadmergedfile_to_s3
+    
+    )
     # task1>>task2
     # task2>>task3
-    task2>>task3>>task4>>task5 >>task6 >>task7>>task8>>task9
+    task2>>task3>>task4>>task5 >>task6 >>task7>>task8>>task9>>task10>>task11>>task12

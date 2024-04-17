@@ -7,8 +7,8 @@ import pandas as pd
 import csv
 import time
 import shutil
-import airflow
-print("Airflow version:", airflow.__version__)
+# import airflow
+# print("Airflow version:", airflow.__version__)
 
 
 
@@ -276,6 +276,7 @@ def extract_data_from_fixed_width(folder_path="../data/tolldata"):
 def merge_csv_files():
     # Specify the paths to the CSV files
     files = '../destination'
+    print(files,"files")
     csv_file1 = os.path.join(files, 'csv_data.csv')
     print(csv_file1)
     csv_file2 = os.path.join(files, 'tsv_data.csv')
@@ -311,5 +312,5 @@ def transform_data():
 # extract_data_from_csv()
 # extract_data_from_tsv()
 # extract_data_from_fixed_width()
-# merge_csv_files()
+merge_csv_files()
 # transform_data()
