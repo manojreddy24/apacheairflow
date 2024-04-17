@@ -76,13 +76,39 @@ with DAG(
                 os.rename(current_file_path, new_file_path)
 
                 print(f"Changed extension of {filename} to .tgz")
+
+    def check_dir():
+        # directory=os.path.dirname(__file__)
+        # files = os.listdir(directory)
+        # print(f"Files in the directory: {files}")
+        current_script_directory = os.path.dirname(os.path.abspath(__file__))
+
+        # Append the relative path to the parent directory
+        parent_directory = os.path.join(current_script_directory, "..")
+        #creat directory directory
+        new_directory = os.path.join(parent_directory, "data")
+        
+        try:
+            os.mkdir(new_directory)
+            print("Directory created successfully.")
+        except FileExistsError:
+            print("Directory already exists.")
+
+        
+
+        # Use the parent directory for listing files
+        files = os.listdir(parent_directory)
+        return files
     
 
     def extract_files():
-        directory=os.path.dirname(__file__)
+        current_script_directory=os.path.dirname(__file__)
+        parent_directory = os.path.join(current_script_directory, "..")
+        new_directory = os.path.join(parent_directory, "data")
+        filesnew = os.listdir(new_directory)
         try:
             # List all files in the directory
-            files = os.listdir(directory)
+            files = os.listdir(current_script_directory)
             
             # Filter the .tgz file from the list
             tgz_files = [file for file in files if file.endswith(".tgz")]
@@ -92,16 +118,16 @@ with DAG(
                 return
             
             # Assuming only one .tgz file is present, extract the first one found
-            tgz_file_path = os.path.join(directory, tgz_files[0])
+            tgz_file_path = os.path.join(current_script_directory, tgz_files[0])
 
             # Open the .tgz file for reading
             with tarfile.open(tgz_file_path, 'r:gz') as tar:
                 print("Extracting files...")
                 # Extract all the contents into the specified directory
-                tar.extractall(directory)
+                tar.extractall(new_directory)
             print("Extraction complete.")
         except FileNotFoundError:
-            print(f"Error: Directory {directory} not found.")
+            print(f"Error: Directory {new_directory} not found.")
         except tarfile.ReadError:
             print(f"Error: Unable to open or read the file {tgz_file_path}.")
         except tarfile.CompressionError:
@@ -110,23 +136,31 @@ with DAG(
             print(f"Error: An error occurred while extracting the file {tgz_file_path}.")
         except Exception as e:
             print(f"Error: An unexpected error occurred: {e}")
+        return filesnew
 
     def delete_files_with_dot_prefix():
-        directory=os.path.dirname(__file__)
+        current_script_directory=os.path.dirname(__file__)
+        parent_directory = os.path.join(current_script_directory, "..")
+        new_directory = os.path.join(parent_directory, "data")
+        # filesnew = os.listdir(new_directory)
         
         # Get a list of all files in the directory
-        files = os.listdir(directory)
+        files = os.listdir(new_directory)
         
         # Iterate through the files
         for file in files:
             # Check if the file name starts with a dot (.)
             if file.startswith('.'):
                 # Construct the full path to the file
-                file_path = os.path.join(directory, file)
+                file_path = os.path.join(new_directory, file)
                 
                 # Delete the file
                 os.remove(file_path)
                 print(f"Deleted file: {file_path}")
+        new_files = os.listdir(new_directory)
+
+        return new_files
+    
 
 
         
@@ -134,17 +168,23 @@ with DAG(
     #     task_id="upload_to_s3",
     #     python_callable=upload_to_s3
     # )
-    # task2=PythonOperator(
-    #     task_id="downloading_from_s3",
-    #     python_callable=downloading_from_s3
-    # )
-    # task3=PythonOperator(
-    #     task_id="change_extension_to_tgz",
-    #     python_callable=change_extension_to_tgz
-    # )
+    task2=PythonOperator(
+        task_id="downloading_from_s3",
+        python_callable=downloading_from_s3
+    )
+  
     task4=PythonOperator(
+        task_id="check_dir",
+        python_callable=check_dir
+    )
+    task5=PythonOperator(
+        task_id="extract_files",
+        python_callable=extract_files
+    )
+    task6=PythonOperator(
         task_id="delete_files_with_dot_prefix",
         python_callable=delete_files_with_dot_prefix
     )
     # task1>>task2
     # task2>>task3
+    task2>>task4>>task5 >>task6

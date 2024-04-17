@@ -1,0 +1,14 @@
+[2024-04-17T16:38:52.729+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.check_dir manual__2024-04-17T16:38:51.007360+00:00 [queued]>
+[2024-04-17T16:38:52.736+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.check_dir manual__2024-04-17T16:38:51.007360+00:00 [queued]>
+[2024-04-17T16:38:52.737+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-17T16:38:52.749+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): check_dir> on 2024-04-17 16:38:51.007360+00:00
+[2024-04-17T16:38:52.755+0000] {standard_task_runner.py:60} INFO - Started process 682 to run task
+[2024-04-17T16:38:52.757+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'check_dir', 'manual__2024-04-17T16:38:51.007360+00:00', '--job-id', '2066', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpouq24djg']
+[2024-04-17T16:38:52.759+0000] {standard_task_runner.py:88} INFO - Job 2066: Subtask check_dir
+[2024-04-17T16:38:52.795+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.check_dir manual__2024-04-17T16:38:51.007360+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-17T16:38:52.859+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='check_dir' AIRFLOW_CTX_EXECUTION_DATE='2024-04-17T16:38:51.007360+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-17T16:38:51.007360+00:00'
+[2024-04-17T16:38:52.861+0000] {logging_mixin.py:188} INFO - Directory already exists.
+[2024-04-17T16:38:52.862+0000] {python.py:202} INFO - Done. Returned value was: ['dags', 'logs', 'data', 'plugins', 'config', 'webserver_config.py', '***.cfg']
+[2024-04-17T16:38:52.880+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=check_dir, execution_date=20240417T163851, start_date=20240417T163852, end_date=20240417T163852
+[2024-04-17T16:38:52.930+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-17T16:38:52.955+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
