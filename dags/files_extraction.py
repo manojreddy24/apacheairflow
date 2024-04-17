@@ -61,6 +61,7 @@ with DAG(
             except Exception as e:
                 print(f"Error downloading file: {e}")
             return local_path
+    
     def change_extension_to_tgz():
         local_path = os.path.dirname(__file__)
     # List all files in the directory
@@ -77,88 +78,55 @@ with DAG(
                 print(f"Changed extension of {filename} to .tgz")
     
 
-
-    def extract_and_upload_to_s3():
-    # Create a temporary directory within the DAG folder
-        DAG_FOLDER_PATH = os.path.dirname(os.path.realpath(__file__))
-        with tempfile.TemporaryDirectory(dir=DAG_FOLDER_PATH) as temp_dir:
-            print("Temporary directory created:", temp_dir)
-
-            # Download the zip file from S3
-            s3_hook = S3Hook(aws_conn_id="minin_s3")
-            # local_zip_path = os.path.join(temp_dir, 'tolldata.tgz')
-            print("Downloading file...")
-            local_zip_path="/Users/avula/Downloads/airflow-setup/data/"
-            s3_hook.download_file(key="orders/tolldata.tgz", bucket_name="vehicle", local_path=local_zip_path)
-            print("File downloaded:", local_zip_path)
-
-            try:
-                # Open the tgz file for reading
-                with tarfile.open(local_zip_path, 'r:gz') as tar:
-                    print("Extracting files...")
-                    # Extract all the contents into the specified directory
-                    tar.extractall(temp_dir)
-                print("Extraction complete.")
-
-                # Upload the extracted files to S3
-                for filename in os.listdir(temp_dir):
-                    file_path = os.path.join(temp_dir, filename)
-                    s3_hook.load_file(filename=file_path, key=f"extracted_files/{filename}", bucket_name="vehicle", replace=True)
-
-            except FileNotFoundError:
-                print(f"Error: File {local_zip_path} not found.")
-            except tarfile.ReadError:
-                print(f"Error: Unable to open or read the file {local_zip_path}.")
-            except tarfile.CompressionError:
-                print(f"Error: Unable to decompress the file {local_zip_path}.")
-            except tarfile.TarError:
-                print(f"Error: An error occurred while extracting the file {local_zip_path}.")
-            except Exception as e:
-                print(f"Error: An unexpected error occurred: {e}")
-
-
-            # Perform operations within the temporary directory
-            # For example, create files, download files, extract files, etc.
-
-            # Example: create a temporary file within the temporary directory
-            # temp_file_path = os.path.join(newwww, 'temp_file2.txt')
-            # with open(temp_file_path, 'w') as temp_file:
-            #     temp_file.write('Hello, temporary world!')
-            # #locate file in the temporary directory
-            # print("Temporary file created:", temp_file_path)
-        return newwww
-
     def extract_files():
-        s3_hook = S3Hook(aws_conn_id="minin_s3")
-        # local_path="dags/"
-        local_path = "dags/tolldata.tgz"  # Temporary path to download the file
-        extract_path = "dags/extracted_files"
-        print(local_path)
-        s3_hook.download_file(key="orders/tolldata.tgz", bucket_name="vehicle", local_path=local_path)
+        directory=os.path.dirname(__file__)
         try:
-        # Open the tgz file for reading
-            with tarfile.open(local_path, 'r:gz') as tar:
+            # List all files in the directory
+            files = os.listdir(directory)
+            
+            # Filter the .tgz file from the list
+            tgz_files = [file for file in files if file.endswith(".tgz")]
+
+            if len(tgz_files) == 0:
+                print("Error: No .tgz file found in the directory.")
+                return
+            
+            # Assuming only one .tgz file is present, extract the first one found
+            tgz_file_path = os.path.join(directory, tgz_files[0])
+
+            # Open the .tgz file for reading
+            with tarfile.open(tgz_file_path, 'r:gz') as tar:
                 print("Extracting files...")
                 # Extract all the contents into the specified directory
-                # tar.extractall("dags/")
-                tar.extractall(extract_path)
+                tar.extractall(directory)
             print("Extraction complete.")
-            for filename in os.listdir("dags/"):
-                file_path = os.path.join("dags/", filename)
-                s3_hook.load_file(filename=file_path, key=f"extracted_files/{filename}", bucket_name="vehicle", replace=True)
-            # Clean up: delete the temporary directory and downloaded tgz file
-            os.remove(local_path)
-            # os.rmdir("local_path")
         except FileNotFoundError:
-            print(f"Error: File {local_path} not found.")
+            print(f"Error: Directory {directory} not found.")
         except tarfile.ReadError:
-            print(f"Error: Unable to open or read the file {local_path}.")
+            print(f"Error: Unable to open or read the file {tgz_file_path}.")
         except tarfile.CompressionError:
-            print(f"Error: Unable to decompress the file {local_path}.")
+            print(f"Error: Unable to decompress the file {tgz_file_path}.")
         except tarfile.TarError:
-            print(f"Error: An error occurred while extracting the file {local_path}.")
+            print(f"Error: An error occurred while extracting the file {tgz_file_path}.")
         except Exception as e:
             print(f"Error: An unexpected error occurred: {e}")
+
+    def delete_files_with_dot_prefix():
+        directory=os.path.dirname(__file__)
+        
+        # Get a list of all files in the directory
+        files = os.listdir(directory)
+        
+        # Iterate through the files
+        for file in files:
+            # Check if the file name starts with a dot (.)
+            if file.startswith('.'):
+                # Construct the full path to the file
+                file_path = os.path.join(directory, file)
+                
+                # Delete the file
+                os.remove(file_path)
+                print(f"Deleted file: {file_path}")
 
 
         
@@ -166,13 +134,17 @@ with DAG(
     #     task_id="upload_to_s3",
     #     python_callable=upload_to_s3
     # )
-    task2=PythonOperator(
-        task_id="downloading_from_s3",
-        python_callable=downloading_from_s3
-    )
-    task3=PythonOperator(
-        task_id="change_extension_to_tgz",
-        python_callable=change_extension_to_tgz
+    # task2=PythonOperator(
+    #     task_id="downloading_from_s3",
+    #     python_callable=downloading_from_s3
+    # )
+    # task3=PythonOperator(
+    #     task_id="change_extension_to_tgz",
+    #     python_callable=change_extension_to_tgz
+    # )
+    task4=PythonOperator(
+        task_id="delete_files_with_dot_prefix",
+        python_callable=delete_files_with_dot_prefix
     )
     # task1>>task2
-    task2>>task3
+    # task2>>task3
