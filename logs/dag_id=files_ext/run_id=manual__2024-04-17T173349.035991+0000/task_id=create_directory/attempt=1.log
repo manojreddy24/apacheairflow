@@ -1,0 +1,14 @@
+[2024-04-17T17:33:53.691+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.create_directory manual__2024-04-17T17:33:49.035991+00:00 [queued]>
+[2024-04-17T17:33:53.699+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.create_directory manual__2024-04-17T17:33:49.035991+00:00 [queued]>
+[2024-04-17T17:33:53.700+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-17T17:33:53.711+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): create_directory> on 2024-04-17 17:33:49.035991+00:00
+[2024-04-17T17:33:53.717+0000] {standard_task_runner.py:60} INFO - Started process 1624 to run task
+[2024-04-17T17:33:53.720+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'create_directory', 'manual__2024-04-17T17:33:49.035991+00:00', '--job-id', '2111', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmpnp4fxnkr']
+[2024-04-17T17:33:53.722+0000] {standard_task_runner.py:88} INFO - Job 2111: Subtask create_directory
+[2024-04-17T17:33:53.757+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.create_directory manual__2024-04-17T17:33:49.035991+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-17T17:33:53.817+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='create_directory' AIRFLOW_CTX_EXECUTION_DATE='2024-04-17T17:33:49.035991+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-17T17:33:49.035991+00:00'
+[2024-04-17T17:33:53.819+0000] {logging_mixin.py:188} INFO - Directory already exists.
+[2024-04-17T17:33:53.819+0000] {python.py:202} INFO - Done. Returned value was: ['dags', 'logs', 'data', 'destination', 'plugins', 'config', 'webserver_config.py', 'extraction_done', '***.cfg']
+[2024-04-17T17:33:53.836+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=create_directory, execution_date=20240417T173349, start_date=20240417T173353, end_date=20240417T173353
+[2024-04-17T17:33:53.852+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-17T17:33:53.874+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

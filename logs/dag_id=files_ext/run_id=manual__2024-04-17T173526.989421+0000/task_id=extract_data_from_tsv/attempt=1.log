@@ -1,0 +1,17 @@
+[2024-04-17T17:45:39.996+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: files_ext.extract_data_from_tsv manual__2024-04-17T17:35:26.989421+00:00 [queued]>
+[2024-04-17T17:45:40.004+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: files_ext.extract_data_from_tsv manual__2024-04-17T17:35:26.989421+00:00 [queued]>
+[2024-04-17T17:45:40.004+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 4
+[2024-04-17T17:45:40.014+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_data_from_tsv> on 2024-04-17 17:35:26.989421+00:00
+[2024-04-17T17:45:40.020+0000] {standard_task_runner.py:60} INFO - Started process 1935 to run task
+[2024-04-17T17:45:40.023+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'files_ext', 'extract_data_from_tsv', 'manual__2024-04-17T17:35:26.989421+00:00', '--job-id', '2153', '--raw', '--subdir', 'DAGS_FOLDER/files_extraction.py', '--cfg-path', '/tmp/tmp9u7ixlp5']
+[2024-04-17T17:45:40.024+0000] {standard_task_runner.py:88} INFO - Job 2153: Subtask extract_data_from_tsv
+[2024-04-17T17:45:40.057+0000] {task_command.py:423} INFO - Running <TaskInstance: files_ext.extract_data_from_tsv manual__2024-04-17T17:35:26.989421+00:00 [running]> on host fdd3cfdf3f53
+[2024-04-17T17:45:40.119+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='files_ext' AIRFLOW_CTX_TASK_ID='extract_data_from_tsv' AIRFLOW_CTX_EXECUTION_DATE='2024-04-17T17:35:26.989421+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-17T17:35:26.989421+00:00'
+[2024-04-17T17:45:40.121+0000] {logging_mixin.py:188} INFO - Directory already exists.
+[2024-04-17T17:45:40.134+0000] {logging_mixin.py:188} INFO - An error occurred while moving file '/opt/***/dags/../data/tollplaza-data.tsv': [Errno 21] Is a directory: '/opt/***/dags/../extraction_done'
+[2024-04-17T17:45:40.134+0000] {logging_mixin.py:188} INFO - Total tSV files found: 1
+[2024-04-17T17:45:40.138+0000] {logging_mixin.py:188} INFO - New tSV file created: /opt/***/dags/../destination/tsv_data.csv
+[2024-04-17T17:45:40.139+0000] {python.py:202} INFO - Done. Returned value was: ['tsv_data.csv', 'csv_data.csv']
+[2024-04-17T17:45:40.156+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=files_ext, task_id=extract_data_from_tsv, execution_date=20240417T173526, start_date=20240417T174539, end_date=20240417T174540
+[2024-04-17T17:45:40.195+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-17T17:45:40.209+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
