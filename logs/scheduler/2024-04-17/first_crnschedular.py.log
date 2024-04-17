@@ -1,0 +1,63 @@
+[2024-04-17T16:05:22.412+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:05:22.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:05:22.419+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:22.418+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:05:22.456+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:05:22.485+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:22.485+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:05:22.524+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:22.523+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:05:22.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.152 seconds
+[2024-04-17T16:05:53.146+0000] {processor.py:161} INFO - Started process (PID=78) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:05:53.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:05:53.149+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:53.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:05:53.170+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:05:53.276+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:53.276+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:05:53.298+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:53.298+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:05:53.329+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.185 seconds
+[2024-04-17T16:06:24.040+0000] {processor.py:161} INFO - Started process (PID=98) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:06:24.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:06:24.043+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:24.042+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:06:24.062+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:06:24.184+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:24.183+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:06:24.213+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:24.212+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:06:24.244+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.207 seconds
+[2024-04-17T16:06:54.516+0000] {processor.py:161} INFO - Started process (PID=118) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:06:54.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:06:54.518+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:54.518+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:06:54.541+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:06:54.630+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:54.630+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:06:54.649+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:54.649+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:06:54.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.156 seconds
+[2024-04-17T16:07:25.844+0000] {processor.py:161} INFO - Started process (PID=138) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:07:25.845+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:07:25.847+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:25.847+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:07:25.870+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:07:25.891+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:25.891+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:07:25.916+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:25.916+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:07:25.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.099 seconds
+[2024-04-17T16:07:56.619+0000] {processor.py:161} INFO - Started process (PID=158) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:07:56.620+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:07:56.622+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:56.622+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:07:56.641+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:07:56.663+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:56.663+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:07:56.686+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:56.686+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:07:56.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.093 seconds
+[2024-04-17T16:08:27.541+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:08:27.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:08:27.548+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:27.547+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:08:27.573+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:08:27.598+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:27.597+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:08:27.623+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:27.623+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:08:27.646+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.111 seconds
+[2024-04-17T16:08:58.347+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:08:58.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:08:58.350+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:58.350+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:08:58.370+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:08:58.389+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:58.388+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:08:58.407+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:58.407+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:08:58.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.088 seconds
+[2024-04-17T16:09:29.041+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:09:29.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first_crnschedular.py for tasks to queue
+[2024-04-17T16:09:29.045+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:09:29.044+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:09:29.064+0000] {processor.py:840} INFO - DAG(s) 'first_cron' retrieved from /opt/airflow/dags/first_crnschedular.py
+[2024-04-17T16:09:29.084+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:09:29.084+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:09:29.108+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:09:29.108+0000] {dag.py:3834} INFO - Setting next_dagrun for first_cron to 2024-04-09 18:19:00+00:00, run_after=2024-04-10 18:19:00+00:00
+[2024-04-17T16:09:29.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first_crnschedular.py took 0.093 seconds

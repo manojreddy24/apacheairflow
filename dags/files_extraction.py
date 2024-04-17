@@ -40,7 +40,7 @@ with DAG(
             bucket_name="vehicle",
             replace=True
     )
-    def exst():
+    def downloading_from_s3():
             # s3_client = boto3.client('s3')
             s3_hook = S3Hook(aws_conn_id="minin_s3")
             s3_key="orders/tolldata.tgz"
@@ -61,21 +61,22 @@ with DAG(
             except Exception as e:
                 print(f"Error downloading file: {e}")
             return local_path
-    
-    
-    def ext():
-        # Create a temporary directory within the DAG folder
-        DAG_FOLDER_PATH = os.path.dirname(os.path.realpath(__file__))
-        with tempfile.TemporaryDirectory(dir=DAG_FOLDER_PATH) as temp_dir:
-            print("Temporary directory created:", temp_dir)
+    def change_extension_to_tgz():
+        local_path = os.path.dirname(__file__)
+    # List all files in the directory
+        for filename in os.listdir(local_path):
+            # Check if the filename starts with "airflow_tmp"
+            if filename.startswith("airflow_tmp"):
+                # Construct the current and new file paths
+                current_file_path = os.path.join(local_path, filename)
+                new_file_path = os.path.join(local_path, filename + ".tgz")
 
-            # Download the zip file from S3
-            s3_hook = S3Hook(aws_conn_id="minin_s3")
-            local_zip_path = os.path.join(temp_dir, 'tolldata.tgz')  # Full file path including filename
-            print("Downloading file...")
-            s3_hook.download_file(key="orders/tolldata.tgz", bucket_name="vehicle", local_path=local_zip_path)
+                # Rename the file to change its extension to ".tgz"
+                os.rename(current_file_path, new_file_path)
 
-        return local_zip_path  # Return the path where the file was downloaded
+                print(f"Changed extension of {filename} to .tgz")
+    
+
 
     def extract_and_upload_to_s3():
     # Create a temporary directory within the DAG folder
@@ -166,7 +167,12 @@ with DAG(
     #     python_callable=upload_to_s3
     # )
     task2=PythonOperator(
-        task_id="exst",
-        python_callable=exst
+        task_id="downloading_from_s3",
+        python_callable=downloading_from_s3
+    )
+    task3=PythonOperator(
+        task_id="change_extension_to_tgz",
+        python_callable=change_extension_to_tgz
     )
     # task1>>task2
+    task2>>task3

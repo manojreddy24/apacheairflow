@@ -1,0 +1,63 @@
+[2024-04-17T16:05:21.697+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:05:21.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:05:21.701+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:21.701+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:05:21.733+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:05:21.759+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:21.758+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:05:21.786+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:21.785+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:05:21.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.121 seconds
+[2024-04-17T16:05:52.273+0000] {processor.py:161} INFO - Started process (PID=72) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:05:52.275+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:05:52.277+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:52.277+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:05:52.301+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:05:52.404+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:52.404+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:05:52.431+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:05:52.431+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:05:52.466+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.197 seconds
+[2024-04-17T16:06:23.014+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:06:23.015+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:06:23.017+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:23.017+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:06:23.044+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:06:23.168+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:23.167+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:06:23.203+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:23.203+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:06:23.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.222 seconds
+[2024-04-17T16:06:53.411+0000] {processor.py:161} INFO - Started process (PID=111) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:06:53.412+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:06:53.414+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:53.414+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:06:53.435+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:06:53.519+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:53.519+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:06:53.539+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:06:53.538+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:06:53.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.148 seconds
+[2024-04-17T16:07:23.693+0000] {processor.py:161} INFO - Started process (PID=131) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:07:23.695+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:07:23.696+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:23.696+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:07:23.727+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:07:23.758+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:23.758+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:07:23.787+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:23.786+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:07:23.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.123 seconds
+[2024-04-17T16:07:54.702+0000] {processor.py:161} INFO - Started process (PID=150) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:07:54.704+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:07:54.706+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:54.706+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:07:54.732+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:07:54.764+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:54.763+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:07:54.799+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:07:54.799+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:07:54.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.126 seconds
+[2024-04-17T16:08:25.510+0000] {processor.py:161} INFO - Started process (PID=171) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:08:25.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:08:25.513+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:25.513+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:08:25.538+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:08:25.560+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:25.560+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:08:25.586+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:25.585+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:08:25.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.099 seconds
+[2024-04-17T16:08:56.422+0000] {processor.py:161} INFO - Started process (PID=191) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:08:56.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:08:56.424+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:56.424+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:08:56.442+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:08:56.463+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:56.463+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:08:56.484+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:08:56.484+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:08:56.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.086 seconds
+[2024-04-17T16:09:27.044+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:09:27.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/s3postgress.py for tasks to queue
+[2024-04-17T16:09:27.049+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:09:27.048+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:09:27.076+0000] {processor.py:840} INFO - DAG(s) 's3postgress' retrieved from /opt/airflow/dags/s3postgress.py
+[2024-04-17T16:09:27.103+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:09:27.103+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-04-17T16:09:27.129+0000] {logging_mixin.py:188} INFO - [2024-04-17T16:09:27.129+0000] {dag.py:3834} INFO - Setting next_dagrun for s3postgress to 2024-04-17 00:00:00+00:00, run_after=2024-04-18 00:00:00+00:00
+[2024-04-17T16:09:27.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/s3postgress.py took 0.112 seconds
